@@ -6,3 +6,7 @@ function clickToShow(id) {
     x.style.display = "none";
   }
 }
+
+function showElement() {
+  
+}

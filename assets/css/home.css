@@ -1,12 +1,9 @@
 /* Header */
 .header {
-    position: fixed;
-    top: 0;
     height: 100px;
     width: 100%;
     background-color: var(--primary-color);
     border-bottom: 1px solid var(--white-color);
-    z-index: 1;
 }
 
 .header__wrap {
