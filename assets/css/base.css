@@ -3,9 +3,11 @@
     --black-color: #000;
     --text-color: #333;
     --primary-color: #262626;
+    --secondary-color: #fde6e8;
     --hover-color: #ffabc2;
     --background-color: #121212;
     --hover-color: #00ffff;
+    --text-hover-color: coral;
 } 
 
 /* Reset CSS */
@@ -23,8 +25,27 @@ html {
     background-color: var(--background-color);
 }
 
+body {
+    overflow-x: hidden;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+
+/* Grid */
 .grid {
     max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-1200 {
+    width: 1200px;
     margin: 0 auto;
 }
 
