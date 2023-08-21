@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.wrap-login {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 80px;
+    padding: 60px 0 0 0;
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+
+.login__label {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+.login__btn {
+    width: 50%;
+    height: 50px;
+    align-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.login__btn-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background-color: var(--white-color);
+}
+
+.login__google-label {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-left: 10px;
+    font-weight: 540;
+}
+
+.login__form {
+    width: 50%;
+    margin: 60px 0 20px;
+    align-self: center;
+}
+
+.login__form-label {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.login__google-img {
+    width: 26px;
+    object-fit: cover;
+}
+
+.login__form-link {
+    margin-left: 4px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.login__form-link:hover {
+    color:var(--text-hover-color);
+}
+
+.login__form-input {
+    margin: 10px 0;
+    height: 40px;
+    width: 100%;
+    padding: 4px;
+    border-radius: 10px;
+    border: 0.1px solid;
+}
+
+.login__btn-login {
+    margin-bottom: 30px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.login__signup {
+    text-align: center;
+}
+
+.login__link-to-homepage {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
