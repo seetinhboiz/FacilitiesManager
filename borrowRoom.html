@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- File CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/formsRoom.css"
+
+    <!-- Font CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.4.0-web/css/all.min.css">
+  
+</head>
+<body>
+    <div >
+        <!-- Header -->
+        <header class="header">
+            <div class="header__wrap">
+                <div class="header__label">
+                    <a href="#" class="header__label-link">
+                        Quản lý cơ sở vật chất
+                    </a>
+                </div>
+                <ul class="header__narbar">
+                    <li><a href="room.html" class="header__narbar-item">Phòng học</a></li>
+                    <li><a href="#" class="header__narbar-item">Thiết bị</a></li>
+                    <li><a href="#" class="header__narbar-item">Tình trạng cơ sở vật chất</a></li>
+                    <li><a href="#" class="header__narbar-item">Mượn trả</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- End Header -->
+        <div class="app">
+        <form action="/">
+            <div class="banner">
+              <h1>Form đăng kí mượn giảng đường</h1>
+            </div>
+            <h2>Applicant Details</h2>
+            <div class="item">
+              <p>Đơn vị</p>
+              <div class="name-item">
+                <input type="text" name="name" placeholder="Tên Đơn vị"/>
+              </div>
+            </div>
+            <div class="item">
+              <p>Người đăng kí</p>
+              <input type="text" placeholder="Họ tên"/>
+            </div>
+            <div class="item">
+              <p>Số điện thoại</p>
+              <input type="text" placeholder="Số điện thoại"/>
+            </div>
+            
+            <h2>Course Details</h2>
+            <div class="item">
+              <p>Phòng mượn</p>
+              <input type="text" name="name"/>
+            </div>
+            <div class="item">
+              <p >Ngày mượn<span class="required">*</span></p>
+              <input type="date" name="sDate" />
+              <!-- <i class="fas fa-calendar-alt"></i> -->
+            </div>
+            <div class="item">
+              <p>Thời gian mượn<span class="required">*</span></p>
+              <input type="time" name="name"/>
+            </div><div class="item">
+              <p>Ghi chú  </span></p>
+              <input type="text" name="name"/>
+            </div>
+            <div class="question-answer checkbox-item">
+              <div>
+                <input type="checkbox" value="none" id="check_1" name="check" required/>
+                <label for="check_1" class="check"><span>Tôi cam kết sau khi sử dụng xong sẽ hoàn trả lại phòng đúng hiện trạng và cách bố trí ban đầu.</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="btn-block">
+            <button type="submit" href="/">Send</button>
+          </div>
+          </form>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__contact">
+                <div class="footer__contact-head">
+                    THÔNG TIN LIÊN HỆ
+                </div>
+                <div class="footer__contact-item">Hotline: <a href="#" class="footer__contact-link">0971934970</a></div>
+                <div class="footer__contact-item">Email: <a href="#" class="footer__contact-link">2050150289nghia@ou.edu.vn</a></div>
+                <div class="footer__contact-item">Trụ sở chính: <a href="#" class="footer__contact-link">371 Nguyễn Kiệm, Quận Gò Vấp, TP.HCM</a></div>
+            </div>
+            <hr class="footer__line">
+            <div class="footer__copy-right">Copyright © 2023 - OUHCMC. All Rights Reserved.</div>
+        </footer>
+    </div>
+    <script src="./assets/js/room.js"></script>
+</body>
+</html>
