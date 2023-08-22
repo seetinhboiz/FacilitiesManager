@@ -47,6 +47,7 @@ form {
 }
 
 .banner {
+    margin-top: 100px;
     position: relative;
     height: 210px;
     background-image: url("/uploads/media/default/0001/01/3f0d2969f2cffeb123ab1a6fa7408bf87bd34bd3.jpeg");
@@ -92,7 +93,7 @@ a {
     color: #095484;
 }
 
-.item input: hover,
+.item input:hover,
 .item select:hover {
     border: 1px solid transparent;
     box-shadow: 0 0 6px 0 #095484;

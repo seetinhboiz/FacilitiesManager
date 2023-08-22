@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- File CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/deviceManagement.css">
+    <!-- Font CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__wrap">
+                <div class="header__label">
+                    <a href="./home.html" class="header__label-link">
+                        Quản lý cơ sở vật chất
+                    </a>
+                </div>
+                <ul class="header__narbar">
+                    <li><a href="#introduce" class="header__narbar-item">Giới thiệu</a></li>
+                    <li><a href="#news" class="header__narbar-item">Tin tức</a></li>
+                    <li><a href="#" class="header__narbar-item">Tình trạng cơ sở vật chất</a></li>
+                    <li><a href="./login.html" class="header__narbar-item">Đăng nhập</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- End Header -->
+        
+        <!-- Body -->
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <!-- Sidebar -->
+                        <div class="sidebar">
+                            <div class="sidebar__label">Main Menu</div>
+                            <hr class="sidebar__line">
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <i class="sidebar__item-icon fa-solid fa-school"></i>
+                                    <span class="sidebar__item-choice">Phòng học</span>
+                                    <i onclick="clickToShow('sidebar__item-list-class')" class="sidebar__item-icon fa-solid fa-caret-down"></i>
+                                    <ul id="sidebar__item-list-class" class="sidebar__item-list-dropdown">
+                                        <li class="sidebar__item-list-dropdown__item">
+                                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-person-arrow-down-to-line"></i>
+                                            <a href="./room.html" class="sidebar__item-list-dropdown__item-link">Tầng 1</a>
+                                        </li>
+                                        <li class="sidebar__item-list-dropdown__item">
+                                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-person-arrow-down-to-line"></i>
+                                            <a href="#" class="sidebar__item-list-dropdown__item-link">Tầng 2</a>
+                                        </li>
+                                        <li class="sidebar__item-list-dropdown__item">
+                                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-person-arrow-down-to-line"></i>
+                                            <a href="#" class="sidebar__item-list-dropdown__item-link">Tầng 3</a>
+                                        </li>
+                                        <li class="sidebar__item-list-dropdown__item">
+                                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-person-arrow-down-to-line"></i>
+                                            <a href="#" class="sidebar__item-list-dropdown__item-link">Tầng 4</a>
+                                        </li>
+                                        <li class="sidebar__item-list-dropdown__item">
+                                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-person-arrow-down-to-line"></i>
+                                            <a href="#" class="sidebar__item-list-dropdown__item-link">Tầng 5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar__item">
+                                    <i class="sidebar__item-icon fa-solid fa-desktop"></i>
+                                    <span class="sidebar__item-choice">Thiết bị</span>
+                                    <i onclick="clickToShow('sidebar__item-list-device')" class="sidebar__item-icon fa-solid fa-caret-down"></i>
+                                    <ul id="sidebar__item-list-device" class="sidebar__item-list-dropdown">
+                                        <li class="sidebar__item-list-dropdown__item">
+                                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-laptop"></i>
+                                            <a href="./laptopManagementDetails.html" class="sidebar__item-list-dropdown__item-link">Laptop</a>
+                                        </li>
+                                        <li class="sidebar__item-list-dropdown__item">
+                                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-laptop"></i>
+                                            <a href="#" class="sidebar__item-list-dropdown__item-link">Máy chiếu</a>
+                                        </li>
+                                        <li class="sidebar__item-list-dropdown__item">
+                                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-laptop"></i>
+                                            <a href="#" class="sidebar__item-list-dropdown__item-link">Máy ảnh</a>
+                                        </li>
+                                        <li class="sidebar__item-list-dropdown__item">
+                                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-laptop"></i>
+                                            <a href="#" class="sidebar__item-list-dropdown__item-link">Máy in</a>
+                                        </li>
+                                        <li class="sidebar__item-list-dropdown__item">
+                                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-laptop"></i>
+                                            <a href="#" class="sidebar__item-list-dropdown__item-link">Thiết bị mạng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar__item">
+                                    <i class="sidebar__item-icon fa-solid fa-paperclip"></i>
+                                    <span class="sidebar__item-choice">Đơn mượn</span>
+                                </li>
+                                <li class="sidebar__item">
+                                    <i class="sidebar__item-icon fa-solid fa-triangle-exclamation"></i>
+                                    <span class="sidebar__item-choice">Đơn báo hỏng</span>
+                                </li>
+                                <li class="sidebar__item">
+                                    <i class="sidebar__item-icon fa-solid fa-right-from-bracket"></i>
+                                    <a href="./login.html" class="sidebar__item-choice">Đăng xuất</a href="#">
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Sidebar -->
+                    </div>
+                    <div class="grid__column-10 management-wrap">
+                        <div class="managemnet-label">Quản lý thiết bị, đồ dùng</div>
+                        <!-- Row 1 -->
+                        <div class="grid__row row-item">
+                            <!-- Device Item -->
+                            <div class="grid__column-2-4">
+                                <a href="./laptopManagementDetails.html" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Laptop</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Máy chiếu</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Máy ảnh</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Máy in</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Thiết bị mạng</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Row 2 -->
+                        <div class="grid__row row-item">
+                            <!-- Device Item -->
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Laptop</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Máy chiếu</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Máy ảnh</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Máy in</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Thiết bị mạng</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Row 3 -->
+                        <div class="grid__row row-item">
+                            <!-- Device Item -->
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Laptop</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Máy chiếu</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Máy ảnh</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Máy in</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <a href="#" class="device-item">
+                                    <div class="device-item__wrap">
+                                        <img src="./assets/img/device111.png" alt="" class="device-item__img">
+                                        <div class="device-item__title">Thiết bị mạng</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Body -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__contact">
+                <div class="footer__contact-head">
+                    THÔNG TIN LIÊN HỆ
+                </div>
+                <div class="footer__contact-item">Hotline: <a href="#" class="footer__contact-link">0971934970</a></div>
+                <div class="footer__contact-item">Email: <a href="#" class="footer__contact-link">2050150289nghia@ou.edu.vn</a></div>
+                <div class="footer__contact-item">Trụ sở chính: <a href="#" class="footer__contact-link">371 Nguyễn Kiệm, Quận Gò Vấp, TP.HCM</a></div>
+            </div>
+            <hr class="footer__line">
+            <div class="footer__copy-right">Copyright © 2023 - OUHCMC. All Rights Reserved.</div>
+        </footer>
+    
+
+    <script src="./assets/js/deviceManagement.js"></script>
+</body>
+</html>

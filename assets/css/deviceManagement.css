@@ -1,0 +1,40 @@
+.managemnet-label {
+    margin-top: 22px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--black-color);
+    text-align: center;
+    font-weight: 600;
+}
+
+.row-item {
+    margin-bottom: 20px;
+}
+
+.device-item {
+    text-decoration: none;
+}
+
+.device-item:hover .device-item__img {
+    opacity: 0.8;
+    transition: ease 0.4s;
+    transform: scale(1.04);
+}
+
+.management-wrap {
+    background-color: var(--white-color);
+    border-radius: 20px;
+}
+
+.device-item__img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.device-item__title {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
