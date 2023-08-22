@@ -8,5 +8,4 @@ function clickToShow(id) {
 }
 
 function showElement() {
-  
 }

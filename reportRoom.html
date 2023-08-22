@@ -37,17 +37,11 @@
         <div class="app">
         <form action="/">
             <div class="banner">
-              <h1>Form đăng kí mượn giảng đường</h1>
+              <h1>Form báo hỏng giảng đường</h1>
             </div>
-            <h2>Thông tin bên mượn</h2>
+            <h2>Thông tin người báo</h2>
             <div class="item">
-              <p>Đơn vị</p>
-              <div class="name-item">
-                <input type="text" name="name" placeholder="Tên Đơn vị"/>
-              </div>
-            </div>
-            <div class="item">
-              <p>Người đăng kí</p>
+              <p>Người báo hỏng</p>
               <input type="text" placeholder="Họ tên"/>
             </div>
             <div class="item">
@@ -55,29 +49,27 @@
               <input type="text" placeholder="Số điện thoại"/>
             </div>
             
-            <h2>Thông tin phòng mượn</h2>
+            <h2>Thông tin phòng hỏng</h2>
             <div class="item">
-              <p>Phòng mượn</p>
+              <p>Phòng hỏng</p>
               <input type="text" placeholder="Phòng"/>
             </div>
             <div class="item">
-              <p >Ngày mượn<span class="required">*</span></p>
+              <p >Ngày báo<span class="required">*</span></p>
               <input type="date" name="sDate" />
               <!-- <i class="fas fa-calendar-alt"></i> -->
             </div>
             <div class="item">
-              <p>Thời gian mượn<span class="required">*</span></p>
+              <p>Thời gian báo<span class="required">*</span></p>
               <input type="time" name="sTime"/>
-            </div><div class="item">
-              <p>Ghi chú  </span></p>
-              <input type="text" placeholder="Mượn vì lý do gì..."/>
             </div>
-            <div class="question-answer checkbox-item">
-              <div>
-                <input type="checkbox" value="none" id="check_1" name="check" required/>
-                <label for="check_1" class="check"></label>
-                <span>Tôi cam kết sau khi sử dụng xong sẽ hoàn trả lại phòng đúng hiện trạng và cách bố trí ban đầu.</span>
+            <div class="item">
+                <p>Thiết bị hỏng</p>
+                <input type="text" placeholder="Thiết bị"/>
               </div>
+            <div class="item">
+              <p>Ghi chú  </span></p>
+              <input type="text" placeholder="Thiết bị hỏng như thế nào..."/>
             </div>
             <div class="btn-block">
               <button type="submit" href="/">Send</button>
