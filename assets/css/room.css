@@ -4,160 +4,23 @@
   --header-search-height: calc(var(--header-height) - var(--nav-height))
 }
 
-
-
-/* -------------------------------------------
-----------------------------------------------
------------------------------------------------ */
-
-
-
-.app {}
-
-
-/* ------------------------------------
---------------- MAIN ------------------
---------------------------------------- */
-
 .main {
   background-color: #f5f5f5;
-  transition: all 0.5s ease-in-out 0.5s;
 }
 
 .main__content {
-  padding-top: 32px;
-  /* display: none; */
+  margin-top: 10px;
 }
 
 .main__content>.col {
   width: 100%;
 }
 
-
-.home-filter {
-  padding: 12px 22px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-
-.home-filter__label {
-  font-size: 1.4rem;
-  color: #555;
-  margin-right: 16px;
-}
-
-.home-filter__label-btn {
-  margin-right: 12px;
-  min-width: 90px;
-}
-
-.select-input__label {
-  font-size: 1.4rem;
-}
-
-.select-input {
-  position: relative;
-  min-width: 200px;
-  height: 34px;
-  padding: 0 12px;
-  border-radius: 2px;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.select-input:hover .select-input__list {
-  display: block;
-}
-
-.select-input__icon {
-  font-size: 1.4rem;
-  color: rgb(131, 131, 131);
-  position: relative;
-  top: 1px;
-}
-
-.select-input__list {
-  display: none;
-  position: absolute;
-  top: 25px;
-  right: 0;
-  left: 0;
-  border-radius: 2px;
-  background-color: #fff;
-  padding: 8px 16px;
-  list-style: none;
-  -webkit-animation: fadeIn ease-out 0.3s;
-  animation: fadeIn ease-out 0.3s;
-  z-index: 1;
-}
-
-.select-input__link {
-  display: block;
-  font-size: 1.4rem;
-  text-decoration: none;
-  color: var(--text-color);
-  padding: 8px 0px;
-}
-
-.select-input__link:hover {
-  color: var(--primary-color);
-}
-
-.home-filter__page {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.home-filter__page-num {
-  font-size: 1.4rem;
-  color: var(--text-color);
-  margin-right: 20px;
-}
-
-.home-filter__page-current {
-  color: var(--primary-color);
-}
-
-.home-filter__page-control {
-  border-radius: 2px;
-  overflow: hidden;
-  display: flex;
-  width: 72px;
-  height: 36px;
-}
-
-.home-filter__page-btn {
-  flex: 1;
-  height: 100%;
-  text-align: center;
-  line-height: 36px;
-  background-color: #fff;
-  font-size: 1.5rem;
-  color: #555;
-}
-
-.home-filter__page-btn:hover {
-  cursor: pointer;
-}
-
-.home-filter__page-btn:active {
-  filter: brightness(95%);
-}
-
-.home-filter__page-btn:first-child {
-  border-right: 1px solid #eee;
-}
-
-.home-product {
+.room {
   margin-bottom: 30px;
 }
 
-.home-product-item {
+.room-item {
   position: relative;
   display: block;
   text-decoration: none;
@@ -168,19 +31,19 @@
   transition: all linear 0.2s;
 }
 
-.home-product-item:hover {
+.room-item:hover {
   transform: translateY(-1px);
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
 
 }
 
-.home-product-item__img {
+.room-item__img {
   padding-top: 100%;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
 
-.home-room-item__name {
+.room-item__name {
   padding-top: 10px;
   font-size: 1.4rem;
   font-weight: 500;
@@ -195,21 +58,21 @@
   -webkit-line-clamp: 2;
 }
 
-.home-product-item__price {
+.room-item__price {
   margin-top: 10px;
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
 }
 
-.home-product-item__price-old {
+.room-item__price-old {
   margin-left: 10px;
   font-size: 1.4rem;
   color: #666;
   text-decoration: line-through;
 }
 
-.home-product-item__action {
+.room-item__action {
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
@@ -217,17 +80,21 @@
 }
 
 
-.home-product-item__rating {
+.room-item__status {
   font-size: 0.8rem;
   margin: -1px 0 0 auto;
   color: #000;
 }
 
-i.home-product-item__rating--gold {
+.room-item__status-ok {
   color: #90ff90;
 }
 
-.home-product-item__origin {
+.room-item__status-error {
+  color: #fc0000;
+}
+
+.room-item__info {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
@@ -237,14 +104,9 @@ i.home-product-item__rating--gold {
   font-weight: 300;
 }
 
-.home-product__pagination {
+.room__pagination {
   margin: 48px 0 32px 0;
 }
-
-
-/* -----------------------------------
------------- PAGINATION --------------
--------------------------------------- */
 
 .pagination {
   display: flex;
@@ -260,8 +122,7 @@ i.home-product-item__rating--gold {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  left: 30px;
-  list-style: none;
+  right: 80px;
 }
 
 .pagination-item {
@@ -297,4 +158,4 @@ i.home-product-item__rating--gold {
 
 .pagination-item:hover {
     cursor: pointer;
-  }
+}

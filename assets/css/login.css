@@ -1,5 +1,4 @@
 html, body {
-    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -89,6 +88,7 @@ html, body {
 }
 
 .login__signup {
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -96,4 +96,18 @@ html, body {
     text-decoration: none;
     display: flex;
     justify-content: center;
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+@media (max-width: 739px) {
+    .wrap-login {
+        width: fit-content;
+    }
+
+    .login__label {
+        line-height: 1.2;
+    }
 }

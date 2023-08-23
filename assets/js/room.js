@@ -6,7 +6,7 @@ const app = {
     itemPerPage: 12,
     startItem: 0,
     endItem: 12,
-    products: [
+    rooms: [
         {
             id: 1,
             path: "./assets/img/room.png",
@@ -192,7 +192,7 @@ const app = {
         {
             id: 27,
             path: "./assets/img/room.png",
-            ttitle: "P-203",
+            title: "P-203",
             content: `Tầng hai, phòng 3`,
             status: "OK",
         },
@@ -255,7 +255,7 @@ const app = {
         {
             id: 36,
             path: "./assets/img/room.png",
-            ttitle: "P-212",
+            title: "P-212",
             content: `Tầng hai, phòng 12`,
             status: "OK",
         },
@@ -498,24 +498,24 @@ const app = {
             status: "OK",
         },
     ],
-    renderProducts: (arr, component, start, end) => {
+    renderRooms: (arr, component, start, end) => {
         const htmls = arr.map((product, index) => {
             if (index >= start && index < end) {
                 return `
-                <div class="product-item col l-3 m-4 c-6" data-index="">
-                    <a onclick="return false" href="" class="home-product-item">
-                        <div class="home-product-item__img"
+                <div class="room-item col l-3 m-4 c-6" data-index="">
+                    <a onclick="return false" href="" class="room-item">
+                        <div class="room-item__img"
                             style="background-image: url(${product.path}); background-repeat: no-repeat; background-position: center; background-size: cover;">
                         </div>
-                        <h2 class="home-room-item__name">
+                        <h2 class="room-item__name">
                             ${product.title}
                         </h2>
 
-                        <div class="home-product-item__origin">
-                            <h5 class="home-product-item__brand">${product.content}</h5>
-                            <div class="home-product-item__rating">
-                            <span class="home-product-item__brand">OK</span>
-                            <i class="${product.star != 0 ? "home-product-item__rating--gold" : ""} fas fa-circle"></i>
+                        <div class="room-item__info">
+                            <h5>${product.content}</h5>
+                            <div class="room-item__status">
+                            <span>${product.status}</span>
+                            <i class="${product.status == "OK" ? "room-item__status-ok" : "room-item__status-error"} fas fa-circle"></i>
                             </div>
                         </div>
                     </a>
@@ -528,25 +528,24 @@ const app = {
     },
     handleEvent: function () {
         const _this = this
-        const homeProductsList = get('.home-product>.row')
+        const homeroomsList = get('.room>.row')
 
 
-        get('.home-product').onclick = function (e) {
-            const x = e.target.closest('.product-item')
+        get('.room').onclick = function (e) {
+            const x = e.target.closest('.room-item')
         }
 
-        _this.renderProducts(this.products, homeProductsList, this.startItem, this.endItem)
+        _this.renderRooms(this.rooms, homeroomsList, this.startItem, this.endItem)
 
-        //render page
-        const numberPages = Math.ceil(this.products.length / this.itemPerPage)
-        let htmls = `<ul>`
+        const numberPages = Math.ceil(this.rooms.length / this.itemPerPage)
+        let htmls = `<ul class="mobile">`
         for (let i = 1; i <= numberPages; i++) {
             if (i == 1) {
                 htmls += `
             <li class="pagination-item" data-index="${i}">
                 <a>Tầng trệt</a>
             </li>`
-        } else {
+            } else {
                 htmls += `
                 <li class="pagination-item" data-index="${i}">
                     <a>Tầng ${i - 1}</a>
@@ -571,7 +570,7 @@ const app = {
             item.onclick = function () {
                 _this.currentPage = index + 1;
                 _this.gotoPage(_this.currentPage)
-                _this.renderProducts(_this.products, homeProductsList, _this.startItem, _this.endItem)
+                _this.renderRooms(_this.rooms, homeroomsList, _this.startItem, _this.endItem)
             }
         })
 
