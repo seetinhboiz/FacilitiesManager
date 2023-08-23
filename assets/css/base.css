@@ -95,6 +95,12 @@ body {
     justify-content: space-between;
 }
 
+.header__menu-icon {
+    display: none;
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
 .header__label-link {
     font-size: 2.2rem;
     color: var(--white-color);
@@ -119,6 +125,7 @@ body {
 .header__narbar-item:hover {
     color: var(--hover-color);
 }
+
 
 .app__container {
     margin-top: 100px;
@@ -165,6 +172,22 @@ body {
     font-size: 1.6rem;
     color: var(--white-color);
     text-align: center;
+}
+
+/* Transition */
+.transition-2 {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 101;
+    background-color: var(--black-color);
+    transition: 0.5s ease-out;
+}
+
+.transition-2.is-active {
+    left: 0px;
 }
 
 /* Body */ 

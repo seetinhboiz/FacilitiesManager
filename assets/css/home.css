@@ -1,5 +1,3 @@
-
-
 /* Banner */
 .banner {
     position: relative;
@@ -128,3 +126,72 @@
 .news__item-link-btn {
     margin-top: 20px;
 }   
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .news__item-title {
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 739px) {
+    /* Header */
+    .header__wrap {
+        flex-direction: column;
+        margin: 0 20px;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+
+    .header__menu-icon {
+        display: inline;
+    }
+
+    .header__narbar-item {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    /* Banner */
+    .banner__title {
+        font-size: 2rem;
+        bottom: 20px;
+    }
+
+    /* Introduce */
+    .introduce {
+        padding: 20px 40px;
+    }
+
+    .introduce__title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .introduce__content {
+        flex-direction: column;
+    }
+
+    .introduce__content-description {
+        padding-right: 0;
+    }
+
+    .introduce__content-img {
+        margin: 20px 0;
+    }
+
+    /* News */
+    .news {
+        padding: 20px 40px;
+    }
+
+    .news__title {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+
+    .news__item-title {
+        line-height: 1.2;
+    }
+}

@@ -38,3 +38,22 @@
     color: var(--text-color);
     font-weight: 500;
 }
+
+@media (max-width: 739px) {
+    /* Header */
+    .header__wrap {
+        flex-direction: column;
+        margin: 0 20px;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+
+    .header__menu-icon {
+        display: inline;
+    }
+
+    .header__narbar-item {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}

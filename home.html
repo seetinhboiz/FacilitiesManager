@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.4.0-web/css/all.min.css">
 </head>
 <body>
+    <div class="transition transition-2 is-active"></div>
     <div class="app">
         <!-- Header -->
         <header class="header">
@@ -23,12 +24,14 @@
                         Quản lý cơ sở vật chất
                     </a>
                 </div>
-                <ul class="header__narbar">
-                    <li><a href="#introduce" class="header__narbar-item">Giới thiệu</a></li>
-                    <li><a href="#news" class="header__narbar-item">Tin tức</a></li>
-                    <li><a href="./deviceManagement.html" class="header__narbar-item">Tình trạng cơ sở vật chất</a></li>
-                    <li><a href="./login.html" class="header__narbar-item">Đăng nhập</a></li>
-                </ul>
+                <div class="header__menu">
+                    <ul class="header__narbar">
+                        <li><a href="#introduce" class="header__narbar-item">Giới thiệu</a></li>
+                        <li><a href="#news" class="header__narbar-item">Tin tức</a></li>
+                        <li><a href="./deviceManagement.html" class="header__narbar-item next-page">Tình trạng cơ sở vật chất</a></li>
+                        <li><a href="./login.html" class="header__narbar-item">Đăng nhập</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <!-- End Header -->
@@ -97,7 +100,6 @@
     
 
     <script src="./assets/js/home.js"></script>
-    <script>
-    </script>
+    <script src="./assets/js/base.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ function reveal(){
         const revealTop = item.getBoundingClientRect().top
 
         // scrollY - offsetTop < innerHeight
-        
+
         if (revealTop < windowHeight - 100) {
             item.classList.add('active')
         } 
