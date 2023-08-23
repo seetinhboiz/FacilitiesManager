@@ -34,9 +34,11 @@ html, body {
     padding: 20px 20%;
     border-radius: 6px;
     background: #fff;
-    box-shadow: 0 0 20px 0 #095484; 
-    }
-    .banner {
+    box-shadow: 0 0 20px 0 #095484;
+}
+
+.banner {
+    margin-top: 100px;
     position: relative;
     height: 210px;
     margin-bottom: 40px;
@@ -65,8 +67,10 @@ html, body {
     }
     .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder, a {
     color: #095484;
-    }
-    .item input:hover, .item select:hover {
+}
+
+.item input:hover,
+.item select:hover {
     border: 1px solid transparent;
     box-shadow: 0 0 6px 0 #095484;
     color: #095484;

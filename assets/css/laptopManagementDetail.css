@@ -1,0 +1,9 @@
+.floor-label {
+    margin-top: 22px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 600;
+}
