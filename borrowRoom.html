@@ -19,22 +19,74 @@
     <div >
         <!-- Header -->
         <header class="header">
-            <div class="header__wrap">
-                <div class="header__label">
-                    <a href="#" class="header__label-link">
-                        Quản lý cơ sở vật chất
-                    </a>
-                </div>
-                <ul class="header__narbar">
-                    <li><a href="room.html" class="header__narbar-item">Phòng học</a></li>
-                    <li><a href="#" class="header__narbar-item">Thiết bị</a></li>
-                    <li><a href="#" class="header__narbar-item">Tình trạng cơ sở vật chất</a></li>
-                    <li><a href="#" class="header__narbar-item">Mượn trả</a></li>
-                </ul>
-            </div>
-        </header>
+          <div class="header__wrap">
+              <div class="header__label">
+                  <a href="#" class="header__label-link">
+                      Quản lý cơ sở vật chất
+                  </a>
+              </div>
+              <div class="header__menu">
+                  <ul class="header__narbar">
+                      <li><a href="./home.html" class="header__narbar-item">Giới thiệu</a></li>
+                      <li><a href="./home.html#news" class="header__narbar-item">Tin tức</a></li>
+                      <li><a href="./deviceManagement.html" class="header__narbar-item next-page">Tình trạng cơ sở vật chất</a></li>
+                      <li><a href="./login.html" class="header__narbar-item">Đăng nhập</a></li>
+                  </ul>
+              </div>
+          </div>
+      </header>
         <!-- End Header -->
         <div class="app">
+          <div class="sidebar" style="margin-top: 50px;">
+            <div class="sidebar__label">Main Menu</div>
+            <hr class="sidebar__line">
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <i class="sidebar__item-icon fa-solid fa-desktop"></i>
+                    <span class="sidebar__item-choice">Thiết bị</span>
+                    <i onclick="clickToShow('sidebar__item-list-device')" class="sidebar__item-icon fa-solid fa-caret-down"></i>
+                    <ul id="sidebar__item-list-device" class="sidebar__item-list-dropdown">
+                        <li class="sidebar__item-list-dropdown__item">
+                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-laptop"></i>
+                            <a href="./laptopManagementDetails.html" class="sidebar__item-list-dropdown__item-link next-page">Laptop</a>
+                        </li>
+                        <li class="sidebar__item-list-dropdown__item">
+                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-laptop"></i>
+                            <a href="#" class="sidebar__item-list-dropdown__item-link">Máy chiếu</a>
+                        </li>
+                        <li class="sidebar__item-list-dropdown__item">
+                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-laptop"></i>
+                            <a href="#" class="sidebar__item-list-dropdown__item-link">Máy ảnh</a>
+                        </li>
+                        <li class="sidebar__item-list-dropdown__item">
+                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-laptop"></i>
+                            <a href="#" class="sidebar__item-list-dropdown__item-link">Máy in</a>
+                        </li>
+                        <li class="sidebar__item-list-dropdown__item">
+                            <i class="sidebar__item-list-dropdown__item-icon fa-solid fa-laptop"></i>
+                            <a href="#" class="sidebar__item-list-dropdown__item-link">Thiết bị mạng</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar__item">
+                    <i class="sidebar__item-icon fa-solid fa-school"></i>
+                    <a href="./room.html" class="sidebar__item-choice">Phòng học</a>
+                </li>
+                <li class="sidebar__item">
+                    <i class="sidebar__item-icon fa-solid fa-paperclip"></i>
+                    <a href="./borrowRoom.html" class="sidebar__item-choice">Đơn mượn</a>
+                
+                </li>
+                <li class="sidebar__item">
+                    <i class="sidebar__item-icon fa-solid fa-triangle-exclamation"></i>
+                    <a href="./reportRoom.html" class="sidebar__item-choice">Đơn báo hỏng</a>
+                </li>
+                <li class="sidebar__item">
+                    <i class="sidebar__item-icon fa-solid fa-right-from-bracket"></i>
+                    <a href="./login.html" class="sidebar__item-choice">Đăng xuất</a href="#">
+                </li>
+            </ul>
+        </div>
         <form action="/">
             <div class="banner">
               <h1>Form đăng kí mượn giảng đường</h1>
